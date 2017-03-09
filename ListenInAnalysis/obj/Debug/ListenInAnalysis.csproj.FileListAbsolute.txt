@@ -1,0 +1,14 @@
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\bin\Debug\ListenInAnalysis.exe.config
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\bin\Debug\ListenInAnalysis.exe
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\bin\Debug\ListenInAnalysis.pdb
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\obj\Debug\ListenInAnalysis.csprojResolveAssemblyReference.cache
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\obj\Debug\MainWindow.g.cs
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\obj\Debug\App.g.cs
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\obj\Debug\ListenInAnalysis_MarkupCompile.cache
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\obj\Debug\ListenInAnalysis_MarkupCompile.lref
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\obj\Debug\MainWindow.baml
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\obj\Debug\ListenInAnalysis.g.resources
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\obj\Debug\ListenInAnalysis.Properties.Resources.resources
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\obj\Debug\ListenInAnalysis.csproj.GenerateResource.Cache
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\obj\Debug\ListenInAnalysis.exe
+C:\Users\Listen-In-user1\Documents\my_projects\listen-in\software\ListenInAnalysis\ListenInAnalysis\obj\Debug\ListenInAnalysis.pdb

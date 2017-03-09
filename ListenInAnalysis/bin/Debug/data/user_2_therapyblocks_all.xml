@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <block idx="0">
+    <trial idx="0" ciIdx="115" cifIdx="460">
+      <stim idx="0" oriIdx="4" t="s2" pt="" />
+      <stim idx="1" oriIdx="0" t="target" pt="" />
+      <stim idx="2" oriIdx="2" t="p2" pt="" />
+    </trial>
+    <trial idx="1" ciIdx="27" cifIdx="108">
+      <stim idx="0" oriIdx="4" t="s1" pt="" />
+      <stim idx="1" oriIdx="0" t="target" pt="" />
+      <stim idx="2" oriIdx="2" t="p2" pt="" />
+    </trial>
+    <trial idx="2" ciIdx="373" cifIdx="1492">
+      <stim idx="0" oriIdx="2" t="p2" pt="" />
+      <stim idx="1" oriIdx="0" t="target" pt="" />
+      <stim idx="2" oriIdx="4" t="s2" pt="" />
+    </trial>
+    <trial idx="3" ciIdx="80" cifIdx="320">
+      <stim idx="0" oriIdx="3" t="p3" pt="" />
+      <stim idx="1" oriIdx="0" t="target" pt="" />
+      <stim idx="2" oriIdx="4" t="s1" pt="" />
+    </trial>
+    <trial idx="4" ciIdx="350" cifIdx="1400">
+      <stim idx="0" oriIdx="0" t="target" pt="" />
+      <stim idx="1" oriIdx="1" t="p1" pt="" />
+      <stim idx="2" oriIdx="4" t="s1" pt="" />
+    </trial>
+    <trial idx="5" ciIdx="545" cifIdx="2180">
+      <stim idx="0" oriIdx="5" t="s2" pt="" />
+      <stim idx="1" oriIdx="0" t="target" pt="" />
+      <stim idx="2" oriIdx="3" t="p3" pt="" />
+    </trial>
+    <trial idx="6" ciIdx="302" cifIdx="1208">
+      <stim idx="0" oriIdx="0" t="target" pt="" />
+      <stim idx="1" oriIdx="2" t="p2" pt="" />
+      <stim idx="2" oriIdx="4" t="s1" pt="" />
+    </trial>
+    <trial idx="7" ciIdx="151" cifIdx="604">
+      <stim idx="0" oriIdx="2" t="p2" pt="" />
+      <stim idx="1" oriIdx="0" t="target" pt="" />
+      <stim idx="2" oriIdx="5" t="s2" pt="" />
+    </trial>
+    <trial idx="8" ciIdx="136" cifIdx="544">
+      <stim idx="0" oriIdx="4" t="s1" pt="" />
+      <stim idx="1" oriIdx="2" t="p2" pt="" />
+      <stim idx="2" oriIdx="0" t="target" pt="" />
+    </trial>
+    <trial idx="9" ciIdx="402" cifIdx="1608">
+      <stim idx="0" oriIdx="0" t="target" pt="" />
+      <stim idx="1" oriIdx="4" t="s1" pt="" />
+      <stim idx="2" oriIdx="3" t="p3" pt="" />
+    </trial>
+    <trial idx="10" ciIdx="4" cifIdx="16">
+      <stim idx="0" oriIdx="5" t="s2" pt="" />
+      <stim idx="1" oriIdx="1" t="p1" pt="" />
+      <stim idx="2" oriIdx="0" t="target" pt="" />
+    </trial>
+    <trial idx="11" ciIdx="89" cifIdx="356">
+      <stim idx="0" oriIdx="0" t="target" pt="" />
+      <stim idx="1" oriIdx="4" t="s1" pt="" />
+      <stim idx="2" oriIdx="1" t="p1" pt="" />
+    </trial>
+    <trial idx="12" ciIdx="1" cifIdx="4">
+      <stim idx="0" oriIdx="0" t="target" pt="" />
+      <stim idx="1" oriIdx="1" t="p1" pt="" />
+      <stim idx="2" oriIdx="4" t="s1" pt="" />
+    </trial>
+    <trial idx="13" ciIdx="83" cifIdx="332">
+      <stim idx="0" oriIdx="2" t="p3" pt="" />
+      <stim idx="1" oriIdx="0" t="target" pt="" />
+      <stim idx="2" oriIdx="4" t="s2" pt="" />
+    </trial>
+    <trial idx="14" ciIdx="527" cifIdx="2108">
+      <stim idx="0" oriIdx="4" t="s2" pt="" />
+      <stim idx="1" oriIdx="0" t="target" pt="" />
+      <stim idx="2" oriIdx="2" t="p2" pt="" />
+    </trial>
+    <res idx="0" score="1" rt="3.1711" replay="0">
+      <stim>1</stim>
+    </res>
+    <res idx="1" score="1" rt="1.5805" replay="0">
+      <stim>1</stim>
+    </res>
+    <res idx="2" score="1" rt="1.9032" replay="0">
+      <stim>1</stim>
+    </res>
+    <res idx="3" score="1" rt="1.5623" replay="0">
+      <stim>1</stim>
+    </res>
+    <res idx="4" score="1" rt="1.8996" replay="0">
+      <stim>0</stim>
+    </res>
+    <res idx="5" score="1" rt="2.1145" replay="0">
+      <stim>1</stim>
+    </res>
+    <res idx="6" score="1" rt="2.0513" replay="0">
+      <stim>0</stim>
+    </res>
+    <res idx="7" score="1" rt="1.8131" replay="0">
+      <stim>1</stim>
+    </res>
+    <res idx="8" score="1" rt="1.6354" replay="0">
+      <stim>2</stim>
+    </res>
+    <res idx="9" score="0" rt="4.1637" replay="0">
+      <stim>1</stim>
+      <stim>0</stim>
+    </res>
+    <res idx="10" score="1" rt="2.0601" replay="0">
+      <stim>2</stim>
+    </res>
+    <res idx="11" score="1" rt="2.0435" replay="0">
+      <stim>0</stim>
+    </res>
+    <res idx="12" score="0" rt="4.4967" replay="0">
+      <stim>1</stim>
+      <stim>0</stim>
+    </res>
+    <res idx="13" score="1" rt="2.0631" replay="0">
+      <stim>1</stim>
+    </res>
+    <res idx="14" score="1" rt="1.6969" replay="0">
+      <stim>1</stim>
+    </res>
+  </block>
+</root>

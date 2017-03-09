@@ -1,0 +1,7 @@
+linguistic category,block type,% corect,% incorrect-phonological,% incorrect-semantic,% incorrect-unrelated,
+tense_progressive,unforced,39.6,0,0,60.4,
+tense_progressive,forced,,,,,
+tense_progressive,noise,46.15,0,0,53.85,
+adj_intrans_sent,unforced,74.55,3.64,19.09,2.73,
+adj_intrans_sent,forced,,,,,
+adj_intrans_sent,noise,82.76,6.9,10.34,0,

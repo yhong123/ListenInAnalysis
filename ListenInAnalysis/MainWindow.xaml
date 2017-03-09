@@ -1,0 +1,173 @@
+﻿<Window x:Class="ListenInAnalysis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ListenInAnalysis"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" WindowState="Maximized">
+    <Grid>
+
+        <TabControl x:Name="tabControl" Margin="5,5,5,5" >
+
+            <!-- TAB 1 -->
+            <TabItem Header="Patients">
+                <Grid Background="#FFE5E5E5">                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>                        
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" Grid.Column="0" Background="#FFE5E5E5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Margin="5,5,5,5" Grid.Row="0" Grid.Column="0">
+                            <Label Content="Select patient:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"/>                            
+                            <ListBox x:Name="lbUser" HorizontalAlignment="Left" Height="550" VerticalAlignment="Top" Width="200" SelectionChanged="lbUser_SelectionChanged"  >
+                            </ListBox>
+                            <Button x:Name="btnCombineBlockDetail" Visibility="Hidden" Content="Combine block detail for 105" HorizontalAlignment="Left" Margin="0,50,0,0" Width="200" Height="22" VerticalAlignment="Top" Click="btnCombineBlockDetail_Click" />
+
+                        </StackPanel>                        
+                    </Grid>
+
+                    <StackPanel Margin="55,5,5,5" Grid.Row="0" Grid.Column="1">
+                        <Label Name="lbProgress" Content="Downloading data, please wait..." HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"/>
+                        
+                        <Border BorderBrush="Gray" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="5,0,5,5" VerticalAlignment="Top" Width="300">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <Label Content="Item level:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
+                                <Button x:Name="btnItemLevelExport" Content="Export csv" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Height="22" VerticalAlignment="Top" Click="btnItemLevelExport_Click" />
+                            </StackPanel>
+                        </Border>
+                        
+                        <Border BorderBrush="Gray" BorderThickness="1" HorizontalAlignment="Left" Height="240" Margin="5,20,5,5" VerticalAlignment="Top" Width="800">
+                            <StackPanel>
+                                <Label Content="Linguistic category:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
+                                <StackPanel Orientation="Horizontal" >
+                                    <StackPanel>
+                                        <CheckBox Name="cb1" Content="noun 1syll word" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb2" Content="noun 1syll phrase" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb3" Content="noun 2syll word" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb4" Content="noun 2syll phrase" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb5" Content="noun 3syll word" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb6" Content="noun 3syll phrase" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <CheckBox Name="cb7" Content="noun attributive" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb8" Content="noun predicative" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb9" Content="noun intransitive" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb10" Content="noun intransitivePPbeg" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb11" Content="noun intransitivePPend" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb12" Content="noun transitive beg" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <CheckBox Name="cb13" Content="noun transitive end" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb14" Content="noun transitivePP" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb15" Content="noun ditransitive" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb16" Content="prep phrase" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb17" Content="prep sentence" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb18" Content="prn possessive sentences" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                    </StackPanel>                                    
+                                    <StackPanel>
+                                        <CheckBox Name="cb19" Content="prn possessive" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb20" Content="prn personal" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb21" Content="tense simple" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb22" Content="tense progressive" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb23" Content="verb intransitive" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb24" Content="verb intransitivePP" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                    </StackPanel>
+                                    <StackPanel>
+                                        <CheckBox Name="cb25" Content="verb transitive" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb26" Content="verb ditransitive" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb27" Content="verb transitivePP" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb28" Content="adj phrase" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb29" Content="adj sentence" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                        <CheckBox Name="cb30" Content="adj intrans sent" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <Button x:Name="btnLinguisticCategoryExport" Content="Export csv" HorizontalAlignment="Left" Margin="10,20,0,0" Width="100" Height="22" VerticalAlignment="Top" Click="btnLinguisticCategoryExport_Click" />
+                            </StackPanel>
+                        </Border>
+
+                        <Border BorderBrush="Gray" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="5,20,5,5" VerticalAlignment="Top" Width="600">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <Label Content="Summary tables of blocks, unique challenge items, unique lexical items:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
+                                <Button x:Name="btnSummaryTablesExport" Content="Export csv" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Height="22" VerticalAlignment="Top" Click="btnSummaryTablesExport_Click" />
+                            </StackPanel>
+                        </Border>
+
+                        <Border BorderBrush="Gray" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="5,20,5,5" VerticalAlignment="Top" Width="600">
+                            <StackPanel VerticalAlignment="Center">
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="Lexical items table:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                    <Button x:Name="btnLexicalItemsExport" Content="Export csv" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Height="22" VerticalAlignment="Center" Click="btnLexicalItemsExport_Click" />
+                                
+                                    <Label Content="Challenge items table:" HorizontalAlignment="Left" Margin="80,0,0,0" VerticalAlignment="Center"/>
+                                    <Button x:Name="btnChallengeItemsExport" Content="Export csv" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Height="22" VerticalAlignment="Center" Click="btnChallengeItemsExport_Click" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+
+                        <Border BorderBrush="Gray" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="5,20,5,5" VerticalAlignment="Top" Width="600">
+                            <StackPanel VerticalAlignment="Center">
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="Forced challenge items:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                    <Button x:Name="btnForcedChallengeItemsExport" Content="Export csv" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Height="22" VerticalAlignment="Center" Click="btnForcedChallengeItemsExport_Click" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                                    <Label Content="All challenge items which belong to lexical items which are in the forced set:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                    <Button x:Name="btnChallengeItems_ForcedLexicalItems_Export" Content="Export csv" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Height="22" VerticalAlignment="Center" Click="btnChallengeItems_ForcedLexicalItems_Export_Click" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+
+                        <Border BorderBrush="Gray" BorderThickness="1" HorizontalAlignment="Left" Height="280" Margin="5,20,5,5" VerticalAlignment="Top" Width="600">
+                            <StackPanel VerticalAlignment="Center">
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="Challenge items - all noise levels:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                    <Button x:Name="btnAllNoiseExport" Content="Export csv" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Height="22" VerticalAlignment="Center" Click="btnAllNoiseExport_Click" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                                    <Label Content="Challenge items - phone voice:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                    <Button x:Name="btnPhoneVoiceExport" Content="Export csv" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Height="22" VerticalAlignment="Center" Click="btnNoiseExport_Click" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                                    <Label Content="Challenge items - noise 1:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                    <Button x:Name="btnNoise1Export" Content="Export csv" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Height="22" VerticalAlignment="Center" Click="btnNoiseExport_Click" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                                    <Label Content="Challenge items - noise 2:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                    <Button x:Name="btnNoise2Export" Content="Export csv" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Height="22" VerticalAlignment="Center" Click="btnNoiseExport_Click" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                                    <Label Content="Challenge items - noise 3:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                    <Button x:Name="btnNoise3Export" Content="Export csv" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Height="22" VerticalAlignment="Center" Click="btnNoiseExport_Click" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                                    <Label Content="Challenge items - noise 4:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                    <Button x:Name="btnNoise4Export" Content="Export csv" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Height="22" VerticalAlignment="Center" Click="btnNoiseExport_Click" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                                    <Label Content="Challenge items - noise 5:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                    <Button x:Name="btnNoise5Export" Content="Export csv" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Height="22" VerticalAlignment="Center" Click="btnNoiseExport_Click" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            
+
+        </TabControl>        
+
+    </Grid>
+</Window>

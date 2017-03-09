@@ -1,0 +1,4 @@
+linguistic category,block type,% corect,% incorrect-phonological,% incorrect-semantic,% incorrect-unrelated,
+noun_1syll_word,unforced,22,9,0,0,0,40.91,0,0,0,
+noun_1syll_word,forced,,,,,
+noun_1syll_word,noise,,,,,
